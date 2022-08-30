@@ -1,21 +1,80 @@
-/*Reset*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Default*/
+:root {
+  --cor1: #BFA7F2;
+  --cor2: #323240;
+  --cor3: #636573;
+  --cor4: #67733D;
+  --cor5: #DCF235;
+}
+
 html{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
 }
 
 body{
+  background-color: var(--cor2);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  flex-wrap: wrap;
   overflow: hidden;
+  padding-top: 3rem;
+}
+
+.add {
+  background-color: var(--cor5);
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.add:active {
+  transform: scale(0.98);
+}
+
+.note {
+  box-shadow: 0 0 1rem .4rem rgb(0, 0, 0, 0.1);
+  margin: 3rem 2rem;
+  height: 40rem;
+  width: 40rem;
+}
+
+.note .tools {
+  background-color: var(--cor1);
+  display: flex;
+  justify-content: flex-end;
+  padding: .5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: var(--cor2);
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-left: .5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  height: 40rem;
+  width: 100%;
+  border: none;
+  padding: 2.5rem;
+}
+
+.hidden {
+  display: none;
 }
