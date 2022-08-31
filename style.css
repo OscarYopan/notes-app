@@ -43,6 +43,7 @@ body{
 }
 
 .note {
+  background-color: white;
   box-shadow: 0 0 1rem .4rem rgb(0, 0, 0, 0.1);
   margin: 3rem 2rem;
   height: 40rem;
@@ -72,6 +73,10 @@ body{
   height: 40rem;
   width: 100%;
   border: none;
+  padding: 2.5rem;
+}
+
+.main {
   padding: 2.5rem;
 }
 
