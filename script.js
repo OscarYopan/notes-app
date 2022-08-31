@@ -40,3 +40,7 @@ function addNewNote(text = '') {
 
   document.body.appendChild(note)
 }
+
+localStorage.setItem('name', JSON.stringify())
+JSON.parse(localStorage.getItem('name'))
+localStorage.removeItem('name')
