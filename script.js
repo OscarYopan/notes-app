@@ -1,10 +1,10 @@
 const addBtn = document.querySelector('.add')
 
-const notes = JSON.parse(localStorage.getItem('notes'))
+// const notes = JSON.parse(localStorage.getItem('notes'))
 
-if(notes) {
-    notes.forEach(note => addNewNote(note))
-}
+// if(notes) {
+//     notes.forEach(note => addNewNote(note))
+// }
 
 addBtn.addEventListener('click', () => addNewNote())
 
