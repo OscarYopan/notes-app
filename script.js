@@ -2,6 +2,10 @@ const addBtn = document.querySelector('.add')
 
 const notes = JSON.parse(localStorage.getItem('notes'))
 
+if(notes) {
+    notes.forEach(note => addNewNote(note))
+}
+
 addBtn.addEventListener('click', () => addNewNote())
 
 function addNewNote(text = '') {
@@ -27,6 +31,8 @@ function addNewNote(text = '') {
 
   deleteBtn.addEventListener('click', () => {
       note.remove()
+
+      updateLocalStorage()
   })
 
   editBtn.addEventListener('click', () => {
